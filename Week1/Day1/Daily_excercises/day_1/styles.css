@@ -1,0 +1,39 @@
+h1, h4 {
+  font-weight: bold;  
+}
+
+ul p{
+    text-decoration:underline;
+}
+
+ol li {
+    list-style-type: upper-roman;
+}
+
+#media {
+  text-align: center;
+}
+.media {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  border: 1px solid;
+}
+
+.red {
+  color: red;
+  text-align: center;
+}
+
+table
+{ 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.empty {
+  border: 0;
+}
