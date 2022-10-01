@@ -3,7 +3,6 @@
 }
 
 nav {
-    
     padding-left: 30px;
     padding-right: 10px;
     font-size: 20px;
@@ -11,17 +10,12 @@ nav {
     color: white;
     text-transform: uppercase;
     background-color: rgb(32, 28, 28);
-    
   }
- 
-    
   
 .nav-links {
     display: flex;
     list-style-type: none;
     margin-left: auto;
-    
-    
 }
 
 .nav-item a {
@@ -29,8 +23,6 @@ nav {
     padding: 10px 15px;
     text-decoration: none;
     color: white;
-    
-
 }
 
 .navbar {
@@ -91,21 +83,4 @@ div.text{
   a:visited {
     color: white;
   }
-   
-
-@media all and (min-width: 1024px) and (max-width: 1280px) { 
-    div {
-        width: 100%;
-        
-    }
-}
-@media all and (min-width: 768px) and (max-width: 1024px) {
-    div {
-        width: 50%;
-        float: left;
-    }
- }
-
-@media all and (min-width: 480px) and (max-width: 768px) { }
-
-@media all and (max-width: 480px) { }
+  

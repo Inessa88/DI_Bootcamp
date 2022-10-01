@@ -1,0 +1,170 @@
+* {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+nav {
+    padding-left: 30px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(32, 28, 28);
+  }
+  
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #cccccc;
+    background: url('picture.jpg') no-repeat center fixed;     
+    background-size: cover;
+}
+
+h1, p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    text-align-last: left;
+    position:relative;
+    left: 50px;
+    top: 320px;
+}
+
+h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    position:relative;
+    top: 300px;
+    padding-left: 50px;
+} 
+
+div.text{
+    width:50%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(3, 0, 0);
+    color: white;
+    text-align: center;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  /* Font-size of the title */
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 25px;
+        
+    }
+  }
+
+  @media all and (min-width: 600px) and (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+        
+    }
+  }
+
+  /* Back-ground color of a navbar */
+  @media all and (min-width: 1200px) {
+    nav {
+        background-color: black;
+        
+    }
+  }
+
+  @media all and (min-width: 922px) and (max-width: 1200px) {
+    nav {
+        background-color: red;
+        
+    }
+  }
+
+  @media all and (min-width: 600px) and (max-width: 922px) {
+    nav {
+        background-color: lightgreen;
+        
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    nav {
+        background-color: yellow;
+        
+    }
+  }
+
+/*  Color of nav-items*/
+  @media all and (min-width: 1200px) {
+    .nav-item a {
+        color:white;
+        
+    }
+  }
+
+  @media all and (min-width: 922px) and (max-width: 1200px) {
+    .nav-item a {
+        color: white;
+        
+    }
+  }
+
+  @media all and (min-width: 600px) and (max-width: 922px) {
+    .nav-item a {
+        color:black;
+        
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    .nav-item a {
+        color:black;
+        
+    }
+  }
+
+/* Position of the text */
+
+  @media all and (min-width: 922px) {
+    
+    
+        
+    }
+  
+
+  

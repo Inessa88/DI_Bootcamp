@@ -1,0 +1,74 @@
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+div.line{
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    width:100%;
+    height: 30%;
+}
+
+div.item{
+    margin:5%;
+    vertical-align: top;
+    display: inline-block;
+
+}
+
+div.description{
+    text-align: center;
+}
+
+span{
+    text-decoration: line-through;
+}
+.image1{
+    background-image: url("ShoppingProjectSetup_Week1Day2/image1.png");
+    background-size: contain;
+    height: 400px;  
+    width: 250px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+}
+
+.image2{
+    background-image: url("ShoppingProjectSetup_Week1Day2/image2.png");
+    background-size: contain;
+    height: 400px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+}
+
+.image3{
+    background-image: url("ShoppingProjectSetup_Week1Day2/image3.png");
+    background-size: contain;
+    height: 400px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+}
+
+.image4{
+    background-image: url("ShoppingProjectSetup_Week1Day2/image4.png");
+    background-size: contain;
+    height: 400px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+}
+
+.price{
+    color: rgb(15, 105, 86);
+}
+
+.old_price{
+    color: black;
+}
