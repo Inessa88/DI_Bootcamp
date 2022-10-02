@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+
+.page{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 80vh;
+    background-color: rgb(207, 212, 212);
+}
+
+.header{
+    height: 25vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding-top: 0.5em;
+
+}
+.info{
+    width: 70vh;
+}
+
+.info h1, .info h2{
+    text-align: center;
+    
+}
+
+.info h1{
+    padding-top: 3em;
+}
+
+.photo{
+    align-self:center;
+    margin: 2em;
+}
+.main{
+    height: 70vh;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5vh;
+    padding: 2em;
+
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items:center;
+
+    
+
+}
+
+ .e-mail  .phone  .linkedin  .github{
+    margin: auto;
+    align-self: center;
+}
+
+h3{
+    text-align: center;
+    justify-self:center;
+    padding-top: 2em;
+    line-height: 200%;
+}
+p{
+    text-align: justify;
+}
+
+@media all and (min-width: 600px) and (max-width: 922px) {
+    .header{
+        flex-direction:column;
+        
+    }
+    .main{
+        grid-template-columns: 1fr;
+    }
+  }
+
+@media all and (max-width: 600px) {
+    .header{
+        flex-direction:column;
+        
+    }
+    .main{
+        grid-template-columns: 1fr;
+    }
+  }
+
+
