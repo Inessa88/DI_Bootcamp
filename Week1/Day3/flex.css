@@ -1,0 +1,34 @@
+.one, .two, .three{
+    background-color: aqua;
+    height: 30vh;
+    align-self: center;
+    
+}
+
+.one, .three{
+    width: 100%;
+}
+
+
+.two{
+    width: 25%;
+    float: right;
+ 
+    
+
+    
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px, auto;
+    align-content: space-between;
+}
+
+div{
+    display: flex;
+    
+}
