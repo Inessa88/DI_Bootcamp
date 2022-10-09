@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,p,a{
+    font-family: "Raleway";
+}
+
+
+.container-fluid{
+    background-color: #fc8b2f;
+
+}
+
+
+header{
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+header::before{
+    content: "";
+    background-image: url('images/headerback.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+.btn, .welcome, h1  {
+    position: relative;
+    margin-left: 30vh;
+  }
+
+
+.btn{
+    background-color: #fc8b2f;
+    color:aliceblue;
+}
+
+h1{
+    color:#fc8b2f;
+}
+
+.nav-item{
+    color: aliceblue;
+}
+
+.about, .portfolio, .blog, .our_team {
+    height: 25vh;
+    text-align: center;
+    padding-left: 0%;
+    margin-left: 0%;
+    padding-top: 10vh ;
+    background-color: rgb(248, 246, 246);
+}
+
+.face1 {
+    border-radius: 50%;
+ 
+}
+h6{
+    text-align: center;
+}
+
+.col2{
+    padding-top: 5vh;
+
+}
+
+h3{
+    color: rgb(10, 124, 124);
+}
+
+
+.send{
+    width: 90vh;
+    margin-left: 0;
+}
+
+.contacts{
+    font-size: large;
+    color:#fc8b2f;
+    padding-top: 10vh;
+}
+
+.name{
+    background-color: #fc8b2f;
+    border-bottom-left-radius: 100%;
+}
+/* This property makes names look as they have to */
+.col-name{
+    width: fit-content;
+
+}
+
+h4{
+    color: #fc8b2f;
+}
+
+.contact{
+    margin-top: 10vh;
+    
+}
+
+.card-title, .card-text, {
+    text-align: start;
+ 
+}
+
+.post{
+    margin-left: 10vh;
+}
+
+.img-blog{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+footer{
+    height: 10vh;
+}
+
