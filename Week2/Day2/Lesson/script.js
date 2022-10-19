@@ -59,6 +59,9 @@ if (age < 18) {
 
 
 // Exercise 2
+// Write as comments the steps of the resolution of this piece of code
+
+// Guess what will be the result before checking it
 
 let a = 2 + 2;
 
@@ -66,7 +69,7 @@ switch (a) {
   case 3:
     alert( 'Too small' );
     break;
-  case 4:
+  case 4:// here will appear alert with "Exactly" and there won't be further checking, because of break
     alert( 'Exactly!' );
     break;
   case 5:
@@ -74,4 +77,28 @@ switch (a) {
     break;
   default:
     alert( "I don't know such values" );
+}
+
+
+
+// Exercise 3
+// Write as comments the steps of the resolution of this piece of code
+
+// Guess what will be the result before checking it
+
+let a = 2 + 2;
+
+switch (a) {
+  case 4:
+    alert('Right!'); // here will appear alert with "Right!" and there won't be further checking, because of break
+    break;
+
+  case 3: // (*) grouped two cases
+  case 5:
+    alert('Wrong!');
+    alert("Why don't you take a math class?");
+    break;
+
+  default:
+    alert('The result is strange. Really.');
 }
