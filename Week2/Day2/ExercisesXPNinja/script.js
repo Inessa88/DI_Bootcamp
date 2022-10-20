@@ -3,6 +3,7 @@
 // Given the years two people were born, find the date when the younger one is exactly half the age of the older.
 // Notes: The dates are given in the format YYYY
 
+// The 1 way
 
 let older = 1978;
 let younger = 1998;
@@ -12,6 +13,18 @@ let ageYounger= year - younger;
 console.log(year);
 console.log(ageOlder);
 console.log(ageYounger);
+
+// The 2 way 
+
+// let older = 1978;
+// let younger = 1998;
+// let diff = younger - older
+// let year = diff + younger;
+// let ageOlder= year - older;
+// let ageYounger= year - younger;
+// console.log(year);
+// console.log(ageOlder);
+// console.log(ageYounger);
 
 
 // Exercise 3 : Secret Word
