@@ -16,9 +16,10 @@ const sentence = "The local weather is EXCELLENT, I like it here.";
 const wordNot =sentence.indexOf("not");
 const wordBad = sentence.indexOf("bad");
 
+let substr;
 
-if (wordBad > wordNot){
-    console.log(sentence.replace("not that bad", "good"));
-} else{
-    console.log(sentence);
+if (wordBad > wordNot && wordBad!== -1 && wordNot !== -1){
+    substr = sentence.substring(wordNot, wordBad+3);
+    sentence = sentence.replace(substr, "good");
 };
+console.log(sentence);
