@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#main_page{
+    background-color: salmon;
+    height: 100vh;
+}
