@@ -119,19 +119,19 @@ const morse = `{
     ")": "-.--.-"
   }`
 
-function toJs(morse_json) {
-    let js_obj = JSON.parse(morse_json)
-    if (js_obj === {}){
+function toJs(morseJson) {
+    let jsObj = JSON.parse(morseJson)
+    if (jsObj === {}){
         return Promise.reject('The object is empty!')
     } else {
-        return Promise.resolve(js_obj)
+        return Promise.resolve(jsObj)
     }
 
 }
 
 function toMorse(morseMapping) {
     return new Promise ((resolve, reject) => {
-        const userInput = prompt('Give me a word or a sentence')
+        const userInput = prompt('Give me a word or a sentence').toLowerCase();
         const userLettersArray = userInput.split('')
         userLettersArray.forEach(function(currLeter){
             if (!(currLeter in  morseMapping)) {
