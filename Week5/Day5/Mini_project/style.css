@@ -1,0 +1,41 @@
+body{
+    background-image: url(https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp);
+    text-align: center;
+}
+
+button{
+    background-color: white;
+    border: 3px solid yellow;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 5vh;
+    
+}
+
+
+#character{
+    border: 3px solid yellow;
+    border-radius: 20px;
+    height: 300px;
+    width: 640px;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+
+    
+}
+
+#logo{
+    background: url(https://i.dlpng.com/static/png/253278_thumb.png) center center no-repeat;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+.fa-spinner{
+    color: white;
+}

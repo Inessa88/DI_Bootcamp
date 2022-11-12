@@ -1,0 +1,33 @@
+body{
+    background-image: url(photo.jpg);
+    text-align: center;
+}
+
+h1{
+    margin-top: 30vh;
+    color: black;
+}
+
+
+#myForm{
+    background-color: rgb(169, 250, 223);
+    text-align: center;
+    margin-left: 75vh;
+    width: 400px;
+    color: black;
+    border-radius: 5px;
+    height: 300px;
+    
+}
+
+
+#result{
+    margin-left: 5vh;
+    width: 300px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    text-align: center;
+    margin-top:10px;
+   
+}
