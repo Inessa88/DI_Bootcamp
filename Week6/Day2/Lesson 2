@@ -1,0 +1,36 @@
+CREATE TABLE city_info (
+	event_datetime timestamp NOT NULL, 
+	city VARCHAR(50) NOT NULL, 
+	temperature decimal NOT NULL,
+	light decimal NOT NULL, 
+	airquality_raw decimal NOT NULL, 
+	sound decimal NOT NULL, 
+	humidity decimal NOT NULL, 
+	dust decimal NOT NULL
+);
+
+SELECT * FROM city_info;
+
+COPY city_info(event_datetime,city,temperature,light,airquality_raw,sound,humidity,dust) 
+FROM '/home/vitaly/Desktop/Inessa studies/Bootcamp DI/DI_Bootcamp/Week6/Day1/city_info.csv' DELIMITER ',' CSV HEADER;
+
+-- Exercise Use aggregate functions
+-- 1. How many rows per city does the table have ?
+SELECT city, count(city) from city_info group by city;
+-- 2. What is the average dust index in the city of Boston between 01/03/2015 and 05/03/2015?
+SELECT round(avg(dust), 2) AS average_dust FROM city_info where city = 'Boston' and event_datetime 
+between'01-03-2015' and '05-03-2015';
+-- 3. How many rows does the table have about the city "San Francisco" ?
+select count(city) from city_info where city = 'San Francisco';
+-- 4. Where and when (only hour) it's the noisiest in the world?.
+select city, extract(HOUR from event_datetime) as hour_day from city_info
+where sound = (select max(sound) from city_info);
+
+
+
+
+
+
+
+
+

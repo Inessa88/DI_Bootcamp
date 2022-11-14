@@ -1,0 +1,72 @@
+alter table actors add column salary numeric default 1000;
+alter table actors add column nationality varchar(50);
+select * from actors;
+alter table actors
+drop column salary;
+
+update actors
+set nationality = 'American'
+where first_name = 'George'
+returning *;
+
+
+-- returning return what we want
+select * from actors;
+
+update actors
+set nationality = 'American'
+returning *;
+
+--update the salary of all the actors depending on the number of oscars they have 
+update actors 
+set salary = number_oscars*100000
+returning *;
+
+
+delete from actors
+where first_name = 'Matt'
+returning *;
+
+select * from actors;
+
+In the table actors, write the following commands:
+
+-- Update the first name of Matt Damon to "Maty"
+-- Update the number of oscars of George Clooney to 4, and return the updated record
+-- Rename the 'age' column by 'birthdate'
+-- Delete one actor and return it
+
+update actors
+set first_name = 'Angie'
+where last_name = 'Jolly'
+returning *;
+
+update actors
+set number_oscars = 4
+where last_name = 'Clooney'
+returning *;
+
+
+alter table actors rename column date_birth to birthdate;
+select * from actors;
+
+delete from actors
+where first_name = 'Brad'
+returning *;
+
+select max(salary) as maximum_salaty from actors;
+select min(salary) as minimum_salaty from actors;
+select sum(salary) as sum_salaty from actors;
+
+select last_name from actors where salary = (select max(salary) from actors);
+
+select count (nationality) from actors where nationality = 'American';
+
+select nationality, count (*) as number_of_people from actors group by nationality;
+
+select nationality, count (*) as number_of_people from actors where nationality = 'American' group by nationality;
+
+-- or
+
+select nationality, count (*) as number_of_people from actors group by nationality  having nationality = 'American';
+-- we use having instead of where if we need comdition after group by.

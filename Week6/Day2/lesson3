@@ -1,0 +1,181 @@
+-- alias :  temporarily assign tables new names during the execution of a query.
+SELECT date_birth AS date_of_birth_actors FROM actors;
+​
+​
+-- Add 2 more columns: salary (integer), nationality (varchar)
+ALTER TABLE actors ADD COLUMN salary NUMERIC DEFAULT 1000;
+ALTER TABLE actors ADD COLUMN nationality VARCHAR(50);
+​
+SELECT * FROM actors ORDER BY actor_id ASC;
+​
+-- drop a column from a table
+-- ALTER TABLE actors 
+-- DROP COLUMN salary;
+​
+-- Update the row with the value of American as the nationality
+UPDATE actors
+SET nationality = 'American'
+WHERE first_name='George' AND last_name='Clooney'
+RETURNING * ;
+​
+​
+-- RETURNING *
+-- means return all the colums of the updated row
+​
+-- RETURNING first_name,last_name, nationality;
+-- return the colums first_name,last_name, nationality of the updated row
+​
+-- udpate all the rows to american
+UPDATE actors
+SET nationality = 'American'
+RETURNING * ;
+​
+-- update the salary of all the actors depending the nb of oscars they have
+UPDATE actors
+SET salary = number_oscars*100000
+RETURNING *;
+​
+-- if the column doesnt have a contraint of NOT NULL, it can be updated to null
+UPDATE actors
+SET nationality = null
+WHERE first_name='George' AND last_name='Clooney'
+RETURNING * ;
+​
+-- the column number_oscars is NOT NULL so, if we forget to fill it with data, we get an error  
+INSERT INTO actors (first_name, last_name, date_birth, number_oscars, salary)
+VALUES ('John', 'Smith', '2012-03-12')
+RETURNING *;
+​
+-- the column last_name is NOT NULL but an empty string doesnt represent NULL so we can add a last_name that is an empty string
+INSERT INTO actors (first_name, last_name, date_birth, number_oscars, salary)
+VALUES ('John', '', '2012-03-12', 2)
+RETURNING *;
+​
+-- actor_id 8
+-- delete all the data and restart the actor_id to 1
+TRUNCATE TABLE actors RESTART IDENTITY;
+​
+SELECT * FROM actors;
+​
+INSERT INTO actors (first_name, last_name, date_birth, number_oscars, nationality)
+VALUES 
+('George', 'Clooney', '2012-03-12', 2, 'American'),
+('Matt', 'Damon', '2012-03-12', 2, 'American'),
+('Angelina', 'Jolie', '2012-03-12', 0, 'Israeli')
+RETURNING *;
+​
+-- she was of id 3
+DELETE FROM actors
+WHERE first_name = 'Angelina';
+​
+SELECT * FROM actors;
+​
+INSERT INTO actors (first_name, last_name, date_birth, number_oscars, nationality)
+VALUES 
+('John', 'Smith', '2012-03-12', 0, 'Israeli')
+RETURNING *;
+-- will the new actor be of id 3 ?
+-- will it be of id 4 ? it will be of id 4 because the serial type keeps running
+​
+
+
+
+SELECT * FROM actors;
+​
+-- Aggregate functions
+SELECT MAX(salary) AS maximum_salary FROM actors;
+SELECT MIN(salary) AS minimum_salary FROM actors;
+SELECT SUM(salary) AS sum_salary FROM actors;
+​
+-- subquery
+-- first I select the value of the maximum salary
+-- pass the value in the WHERE clause
+SELECT first_name, last_name, salary FROM actors WHERE salary = (SELECT MAX(salary) FROM actors);
+​
+-- the same as
+-- SELECT last_name FROM actors WHERE salary = 5000000;
+​
+-- select how many actors are american
+SELECT COUNT(nationality) FROM actors WHERE nationality = 'American'
+​
+-- INSERT INTO actors (first_name, last_name, date_birth, number_oscars, nationality)
+-- VALUES ('Sarah', 'ABC', '2012-03-12', 2, null)
+-- RETURNING *;
+​
+SELECT COUNT(*) FROM actors;  -- how many rows in the table : 4
+SELECT COUNT(nationality) FROM actors;  -- how many actors with a nationality different than null : 3
+​
+-- count the group
+-- SELECT nationality FROM actors; -- show the nationality of each actor
+-- SELECT COUNT(*) AS number_people FROM actors; -- show how many people is in the table
+​
+-- show how many actor PER nationality
+SELECT nationality, COUNT(nationality) AS number_people 
+FROM actors
+GROUP BY nationality;
+-- null        0
+-- "American"	2
+-- "Israeli"	1
+​
+SELECT nationality, COUNT(nationality) AS number_people 
+FROM actors
+GROUP BY nationality
+HAVING nationality='American'; --condition after group by
+​
+SELECT nationality, COUNT(nationality) AS number_people 
+FROM actors
+GROUP BY nationality
+HAVING COUNT(nationality) >= 2;
+​
+
+
+-- Foreign key
+
+-- SELECT * FROM actors ORDER BY actor_id ASC;
+​
+CREATE TABLE movies(
+    movie_id SERIAL PRIMARY KEY,
+    movie_title VARCHAR (50) NOT NULL,
+    movie_story TEXT, 
+    actor_playing_id INTEGER REFERENCES actors (actor_id)
+);
+​
+-- the column actor_playing_id references the column actor_id from actors table
+-- FOREIGN KEY - FK
+​
+SELECT * FROM movies;
+​
+-- INSERT INTO movies (movie_title,movie_story, actor_playing_id)
+-- VALUES ('Ocean Eleven', 'Bla Bla', 10); -- ERROR actor_id = 10 doesn't exist
+​
+-- SUBQUERIES
+INSERT INTO movies (movie_title,movie_story, actor_playing_id)
+VALUES ('Ocean Eleven', 'Bla Bla', 
+        (SELECT actor_id FROM actors WHERE first_name='Matt' AND last_name='Damon'));
+​
+INSERT INTO movies (movie_title,movie_story, actor_playing_id)
+VALUES ('Robin Hood', 'Bla Bla', 
+        (SELECT actor_id FROM actors WHERE first_name='Matt' AND last_name='Damon'));
+​
+INSERT INTO movies (movie_title,movie_story, actor_playing_id)
+VALUES ('The little mermaid', 'Bla Bla', 
+        (SELECT actor_id FROM actors WHERE first_name='George' AND last_name='Clooney'));
+​
+-- select the movies where matt damon played in
+SELECT actors.first_name, actors.last_name, movies.movie_title
+FROM actors
+INNER JOIN movies
+ON actors.actor_id = movies.actor_playing_id
+WHERE first_name='Matt' AND last_name='Damon';
+​
+-- how many movies matt damon played in
+-- how many times do we find the same first name and last name from the movies table
+SELECT actors.first_name, actors.last_name, COUNT(movie_title) AS number_movies
+FROM actors
+INNER JOIN movies
+ON actors.actor_id = movies.actor_playing_id
+GROUP BY actors.first_name, actors.last_name
+HAVING first_name='Matt' AND last_name='Damon';
+​
+​
+​
