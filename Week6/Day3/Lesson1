@@ -1,0 +1,105 @@
+-- SELECT nationality FROM actors WHERE first_name = 'Sarah';
+-- SELECT COUNT(*) FROM actors WHERE nationality = null; -- null means unknown
+-- SELECT COUNT(*) FROM actors WHERE nationality IS null; -- null is now a value
+-- SELECT COUNT(*) FROM actors WHERE nationality IS NOT null;
+​
+-- ONE TO ONE RELATIONSHIP
+-- CAR BELONG TO ONLY 1 PERSON
+-- 1 PERSON CAN ONLY OWN 1 CAR
+​
+-- SELECT * FROM actors;
+​
+CREATE TABLE cars (
+  car_id SERIAL PRIMARY KEY,
+  brand VARCHAR(30) NOT NULL,
+  color VARCHAR(30) NOT NULL,
+  owner_id INTEGER UNIQUE REFERENCES actors (actor_id) -- one to one relationship
+);
+​
+INSERT INTO cars (brand, color, owner_id)
+VALUES
+('BMW', 'blue', (SELECT actor_id FROM actors WHERE first_name='John' AND last_name='Smith')),
+('RENAULT', 'red', (SELECT actor_id FROM actors WHERE first_name='George' AND last_name='Clooney'))
+RETURNING *
+​
+INSERT INTO cars (brand, color, owner_id)
+VALUES
+('JAGUAR', 'pink', (SELECT actor_id FROM actors WHERE first_name='George' AND last_name='Clooney'))
+RETURNING * -- error because violates the UNIQUE constraint
+​
+​
+-- the actors that have a car
+SELECT first_name, last_name, brand, color
+FROM actors
+INNER JOIN cars
+ON actors.actor_id = cars.owner_id;
+​
+-- all the actors even those that don't have a car
+SELECT first_name, last_name, brand, color
+FROM actors
+LEFT JOIN cars
+ON actors.actor_id = cars.owner_id; -- table1.pk = table2.fk
+​
+​
+
+CREATE TABLE genre (
+  genre_id SERIAL PRIMARY KEY, -- means not null and unique
+  genre VARCHAR(30) NOT NULL
+);
+​
+CREATE TABLE music (
+  music_id SERIAL PRIMARY KEY,
+  music_name VARCHAR(30) NOT NULL,
+  author VARCHAR(30) NOT NULL,
+  ref_genre_id INTEGER REFERENCES genre (genre_id) ON DELETE CASCADE ON UPDATE CASCADE
+  -- ONE TO MANY RELATIONSHIP
+    -- ON DELETE CASCADE will delete the child as well
+    -- ON DELETE SET NULL will set the foreign key of the child to null
+);
+​
+​
+-- DROP TABLE music;
+​
+INSERT INTO genre (genre)
+VALUES('Blues')
+RETURNING *
+​
+INSERT INTO music (music_name, author,ref_genre_id)
+VALUES
+	  ('I Cant Quit You Baby', 'Otis Rush', (SELECT genre_id FROM genre WHERE genre='Blues')),
+	  ('Crossroad Blues', 'Robert Johnson', (SELECT genre_id FROM genre WHERE genre='Blues'))
+RETURNING *;
+​
+INSERT INTO music (music_name, author,ref_genre_id)
+VALUES
+	  ('Swan lake', 'Otis Rush', (SELECT genre_id FROM genre WHERE genre='Classical'))
+RETURNING *;
+​
+TRUNCATE TABLE music restart identity -- delete all the rows from the music table
+​
+DELETE FROM music
+WHERE music_name='I Cant Quit You Baby'; -- ok
+​
+select * from music
+​
+DELETE FROM genre
+WHERE genre='Blues'; -- will delete all the music with this genre
+​
+​
+-- difference between char and varchar
+CREATE TABLE test (
+    first_name CHAR(10),
+    last_name VARCHAR(10)
+)
+​
+INSERT INTO test(first_name, last_name)
+VALUES('Hello', 'Hello');
+-- the value 'Hello' in Char will be 'Hello    ' --> hello + 5 spaces to fill the 10 characters
+-- the value 'Hello' in varchar will be 'Hello' --> just hello
+​
+select * from test;
+​
+​
+​
+​
+​
