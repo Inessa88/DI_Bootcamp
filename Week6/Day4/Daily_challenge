@@ -1,0 +1,38 @@
+-- Instructions
+-- Create a table called product_orders and a table called items. You decide which fields should be in each table, although make sure the items table has a column called price.
+-- There should be a one to many relationship between the product_orders table and the items table. An order can have many items, but an item can belong to only one order.
+CREATE TABLE items
+	 (item_id SERIAL PRIMARY KEY,
+	 item_name VARCHAR(50),
+	 item_price SMALLINT);
+
+INSERT INTO items (item_name, item_price)
+VALUES
+	  ('Table', 300),
+	  ('Chair', 120),
+	  ('Bed', 750),
+	  ('Sofa', 800)
+RETURNING *;
+   
+CREATE TABLE product_orders
+	 (id SERIAL PRIMARY KEY,
+	 first_name VARCHAR(50),
+	 last_name VARCHAR(50),
+	 quantity SMALLINT,
+	 order_item_id INTEGER REFERENCES items (item_id) ON DELETE CASCADE ON UPDATE CASCADE
+ );
+
+INSERT INTO product_orders (first_name, last_name, quantity, order_item_id)
+VALUES
+	  ('John', 'Rose', 4, (SELECT item_id FROM items WHERE item_name='Chair')),
+	  ('Sarah', 'Black', 1, (SELECT item_id FROM items WHERE item_name='Bed')),
+	  ('Lea', 'Smith', 2, (SELECT item_id FROM items WHERE item_name='Table'))
+RETURNING *;
+
+-- Create a function that returns the total price for a given order.	 
+SELECT product_orders.quantity * items.item_price
+FROM product_orders
+INNER JOIN items ON product_orders.order_item_id = items.item_id
+where product_orders.first_name = 'John' and product_orders.last_name = 'Rose';
+
+
