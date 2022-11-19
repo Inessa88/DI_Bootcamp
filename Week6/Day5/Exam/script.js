@@ -6,7 +6,8 @@ const secondElement = nums[1];
 
 // const arrNums = [1, 2, 3, 4, 5];
 
-arrNums = [1, 2, 4, 5]; 
+arrNums = [1, 2, 3, 4, 5]; 
+slice method in this case won't delete anything.
 
 
 // 3. What is the result of the following code :
@@ -74,7 +75,8 @@ x(9, 7);
 // 	a = 5;
 // }
 
-No, those variables are not global, they can be used only inside local scope of that function.
+Yes, they are always global.
+windows.a = 5 - global variable
 
 
 // 8. In JavaScript can we pass functions as arguments to other functions? What does this code return ?
@@ -99,7 +101,7 @@ Hello, JavaScript!
 // sum(42,0)
 // console.log("the answer to everything is", sum(42,0))
 
-sum = (num1, num2) => num1 + num2;
+const sum = (num1, num2) => num1 + num2;
 
 
 sum(40,2);
@@ -152,6 +154,7 @@ button.addEventListener('click', () => {
     const div = document.getElementById('div')
     const para = document.createElement('p');
     para.addEventListener("mouseover", () => {para.style.color = 'red'})
+    para.addEventListener("mouseout", () => {para.style.color = 'black'})
     const contentPara = document.createTextNode("New Paragraph");
     para.appendChild(contentPara);
     div.appendChild(para);
@@ -369,8 +372,8 @@ const div = document.getElementById('info')
 buttonCat.addEventListener('click', getinfo)
 
 async function getinfo(){
-    const results = await fetch("https://catfact.ninja/fact");
     try {
+        const results = await fetch("https://catfact.ninja/fact");
         if(results.status == 200) {
             const info = await results.json(); 
             const text = info.fact;
