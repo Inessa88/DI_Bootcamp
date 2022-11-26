@@ -10,7 +10,7 @@
 const getUsers = async () => {
     try {
         const res = await fetch('https://jsonplaceholder.typicode.com/users')
-        const data = awaitres.json()
+        const data = await res.json()
         // console.log(data);
         return data
     } catch (e) {

@@ -47,6 +47,9 @@ const app = express();
 app.use(cors()) //this is how we use cors
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
+
+app.use('/',express.static(__dirname +'/public')); //to see the page i the browser we need to go to the particular name of the html file, if it's name not just index.html
+
 app.listen(process.env.PORT, ( )=> {
     console.log(`run on port ${process.env.PORT}`);
 })
@@ -124,16 +127,35 @@ app.post('/api/products', (req,res)=>{
 })
 
 //update - put - update/modify a product
+// app.put('/api/products/:id', (req,res)=>{
+//     const {id} = req.params;
+//     const{name, price} = req.body;
+//     db('products')
+//     .select('id','name','price')
+//     .where({id:id})
+//     .update({
+//         name: name,
+//         price: price
+//     })
+//     .then(rows=>{
+//         res.json(rows)
+//     })
+//     .catch(e=>{
+//         console.log(e);
+//         res.status(404).json({msg:e.message})
+//     })
+
+// })
+
+//cleaner variant of update
 app.put('/api/products/:id', (req,res)=>{
     const {id} = req.params;
     const{name, price} = req.body;
     db('products')
     .select('id','name','price')
-    .where({id:id})
-    .update({
-        name: name,
-        price: price
-    })
+    .where({id})
+    .update(req.body) //because wehave there name and price
+    .returning('*')
     .then(rows=>{
         res.json(rows)
     })
@@ -147,22 +169,35 @@ app.put('/api/products/:id', (req,res)=>{
 
 //DELETE - delete a product
 
+// app.delete('/api/products/:id', (req,res)=>{
+//     const {id} = req.params;
+//     db('products')
+//     .select('id','name','price')
+//     .where({id:id})
+//     .del(['id', 'name', 'price'])
+//     .returning('*')
+//     .then(rows=>{
+//         res.json(rows)
+//     })
+//     .catch(e=>{
+//         console.log(e);
+//         res.status(404).json({msg:e.message})
+//     })
+// })
+
+//cleaner variant of delete
 app.delete('/api/products/:id', (req,res)=>{
     const {id} = req.params;
     db('products')
-    .select('id','name','price')
-    .where({id:id})
-    .del(['id', 'name', 'price'])
+    .where({id})
+    .del()
     .returning('*')
     .then(rows=>{
         res.json(rows)
     })
     .catch(e=>{
-        console.log(e);
-        res.status(404).json({msg:e.message})
+        res.status(404).json({msg:'product not found'})
     })
 })
-
-
 
 

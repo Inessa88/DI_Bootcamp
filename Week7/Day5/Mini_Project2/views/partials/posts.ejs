@@ -1,0 +1,19 @@
+<div>
+    <% if (locals.arrayOfObjs) { %>
+
+        <% arrayOfObjs.forEach(item =>{ %>
+            <div>
+                <h2><a href="<%= item.link %>"><%= item.title %></a></h2>
+                <ol>
+                    <li><%= item.pubDate %></li>
+                    <li><%= item.creator %></li>
+                    <li><%= item.category %></li>
+                    <li><%= item.content %></li>
+                </ol>
+            </div>
+        <% }) %>
+       
+    <% } %>
+
+
+</div>
