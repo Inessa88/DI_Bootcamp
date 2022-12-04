@@ -63,15 +63,31 @@ app.listen(3001, ()=>{
 
 
 
-    app.get('/countries',(req,res)=>{
-        let name = req.query.country// it's for returning some particular country on localhost/countrycountry=israel
-        db('country')
-        .select('country_id','country') // here we get a promise, we need then
-        .where({country:name})
-        .then(rows =>{
-            res.json(rows)
-        })
-        .catch(e=>{
-            res.status(404).json({msg: e.message})
-        })
-    }) //that's it, if you go to ...localhost/countries you will get all your countries from the database
+app.get('/countries', (req,res)=>{
+    // let name = req.query.country
+    // const {country} = req.params
+    db('country')
+    .select('country_id','country')
+    // .where({country:country})
+    .then(rows => {
+      res.json(rows)
+    })
+    .catch(e=>{
+      res.status(404).json({msg:e.message})
+    })
+  })
+  
+  app.post('/users', (req,res)=>{
+    console.log(req.body);
+  
+    let name = req.body.name
+    let users = [
+      {name:'aaa',email:'aaa@aaa.com'},
+      {name:'bbb',email:'bbb@bbb.com'},
+      {name:'ccc',email:'ccc@ccc.com'}
+    ]
+    let findUser = users.find(item=>{
+      return item.name == name
+    })
+    res.json(findUser);
+  })//that's it, if you go to ...localhost/countries you will get all your countries from the database
