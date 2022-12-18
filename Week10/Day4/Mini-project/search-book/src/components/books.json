@@ -1,0 +1,714 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 1055,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "M5E7EAAAQBAJ",
+        "etag": "7XA0jXdSSg4",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/M5E7EAAAQBAJ",
+        "volumeInfo": {
+          "title": "Sun Wishes",
+          "authors": [
+            "Patricia Storms"
+          ],
+          "publisher": "Groundwood Books Ltd",
+          "publishedDate": "2022-05-01",
+          "description": "A joyful celebration of our daily companion, the sun, as it shines around the world. “If I were the sun, I would sing a gentle morning song to wake my slumbering friends.” So begins this fresh and colorful collaboration between author Patricia Storms and illustrator Milan Pavlović, the creative team behind 2019’s beloved bedtime story, Moon Wishes. Join the sun in this gentle imagining of its travels across the sky, lighting up our gloomiest days, celebrating a bountiful harvest, and delighting in the diversity of life around the world. Milan Pavlović’s vibrant watercolor illustrations complement Patricia Storm’s jubilant text. Young readers will be warmed by the sun’s wishes as they spread through the story, inspiring curiosity, gratitude, and the irresistible urge to step outside! Key Text Features illustrations\ufeff Correlates to the Common Core State Standards in English Language Arts: CCSS.ELA-LITERACY.RL.1.4 Identify words and phrases in stories or poems that suggest feelings or appeal to the senses.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781773064512"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1773064517"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 38,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Fiction"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.2.2.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=M5E7EAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=M5E7EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=M5E7EAAAQBAJ&pg=PP1&dq=sun&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=M5E7EAAAQBAJ&dq=sun&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Sun_Wishes.html?hl=&id=M5E7EAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=M5E7EAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "1CqwzgEACAAJ",
+        "etag": "SSz0iuS+GfY",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/1CqwzgEACAAJ",
+        "volumeInfo": {
+          "title": "The Sun Plays with the Moon",
+          "subtitle": "A Child's First Introduction to the Lunar and Solar Cycles",
+          "authors": [
+            "Alicia Mofford"
+          ],
+          "publishedDate": "2022-03-06",
+          "description": "The Sun Plays with the Moon tells an imaginative story of the Sun and the Moon's journey around Earth. Children will discover what eclipses are, how they appear to us from Earth, and the importance of the solar and lunar cycles.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9798985036619"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 24,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=1CqwzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=1CqwzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=1CqwzgEACAAJ&dq=sun&hl=&cd=2&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=1CqwzgEACAAJ&dq=sun&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Sun_Plays_with_the_Moon.html?hl=&id=1CqwzgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=1CqwzgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The Sun Plays with the Moon tells an imaginative story of the Sun and the Moon&#39;s journey around Earth. Children will discover what eclipses are, how they appear to us from Earth, and the importance of the solar and lunar cycles."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "SF5-zgEACAAJ",
+        "etag": "FfUd6oGnUpI",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/SF5-zgEACAAJ",
+        "volumeInfo": {
+          "title": "Sun in My Tummy",
+          "authors": [
+            "Laura Alary"
+          ],
+          "publisher": "Pajama Press",
+          "publishedDate": "2022-03-15",
+          "description": "In simple but expressive language, a mother describes to her young daughter how the sun's light becomes the energy in her body through the oats, blueberries, and milk in her home-cooked breakfast.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1772782416"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781772782417"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 32,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Nonfiction"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=SF5-zgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=SF5-zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=SF5-zgEACAAJ&dq=sun&hl=&cd=3&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=SF5-zgEACAAJ&dq=sun&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Sun_in_My_Tummy.html?hl=&id=SF5-zgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=SF5-zgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "In simple but expressive language, a mother describes to her young daughter how the sun&#39;s light becomes the energy in her body through the oats, blueberries, and milk in her home-cooked breakfast."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "BpmizgEACAAJ",
+        "etag": "hn8VK4C65ZU",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/BpmizgEACAAJ",
+        "volumeInfo": {
+          "title": "The Golden Monkey Subdues Evil (1)",
+          "subtitle": "Sun Wukong Defeats the Wicked Demoness (Tamil Edition)",
+          "authors": [
+            "Shanghai Animation Film Studio N/A"
+          ],
+          "publisher": "Chinese Animation Classical Company",
+          "publishedDate": "2021-12-31",
+          "description": "The wicked White Demoness wants the flesh of Monk Tang, the leader of the group of four on the journey to the West, as it is rumored to be able to give her immortality. She disguises herself as a village girl, and offers poisonous fruits to him and his disciples, Sun Wukong, Zhu Bajie, and Sha Seng. Only Sun Wukong, the mighty Monkey King, can see through her disguise. He tries to kill her but fails, and she manages to trick the others into believing she's an innocent girl, making them angry at Sun's behavior. Sun tries to convince them of the truth, but to no avail. Later, the same thing happens again, and again. When the fact is finally revealed, how will the four friends face each other? How will they mend their friendship and continue their pilgrimage together?",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1487804040"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781487804046"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 76,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Fiction"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=BpmizgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=BpmizgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=BpmizgEACAAJ&dq=sun&hl=&cd=4&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=BpmizgEACAAJ&dq=sun&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Golden_Monkey_Subdues_Evil_1.html?hl=&id=BpmizgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=BpmizgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The wicked White Demoness wants the flesh of Monk Tang, the leader of the group of four on the journey to the West, as it is rumored to be able to give her immortality."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "ycNGzgEACAAJ",
+        "etag": "8yo5FV29DcA",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/ycNGzgEACAAJ",
+        "volumeInfo": {
+          "title": "The Healing Power of the Sun",
+          "subtitle": "A Comprehensive Guide to Sunlight as Medicine",
+          "authors": [
+            "Richard Hobday"
+          ],
+          "publisher": "Findhorn Press",
+          "publishedDate": "2021-12-07",
+          "description": "• Shares scientific research on sunlight therapy and tuberculosis, as well as studies on sunlight with regard to osteoporosis, diabetes, multiple sclerosis, tooth decay, psoriasis, heart disease, and several forms of cancer • Reveals how the sun can act as a natural disinfectant, killing viruses and bacteria, and how this wisdom was put into use by doctors • Explains how sunlight affects eyesight, sleep, mental health, and the immune system For thousands of years, the human race lived in harmony with the sun and used its heat and light as medicine. In recent history, however, with skin cancer on the rise, we have become too focused on the negative effects of the sun. Fortunately, science has made new discoveries showing just how beneficial the sun truly is to our lives. In this new edition of The Healing Sun, Richard Hobday draws on historical and scientific evidence to explore the many ways that sunlight affects our health and well-being. He shows how the sun acts as a natural disinfectant, killing viruses and bacteria outdoors as well as inside buildings. The author highlights how sunlight therapy has been used to prevent and treat serious health problems like tuberculosis and other infections in the years before antibiotics were developed. Explaining how doctors of the past realized that sunlight and fresh air helped patients recover, he shows how this wisdom was put into use by doctors such as Niels Finsen, Oskar Bernhard, and Auguste Rollier, who each contributed substantially to the development of heliotherapy. Hobday also examines the role of sunlight in regard to conditions like osteoporosis, rickets, diabetes, multiple sclerosis, tooth decay, psoriasis, heart disease, and several forms of cancer. Exploring the sun’s effects on body and mind, the author reveals how our modern artificially lit lifestyles can throw off our biological rhythms, create stress within the body, and lead to poor sleep as well as worsening eyesight, cataracts, obesity, depression, and weakened immune systems from lack of vitamin D. Showing why and how we should welcome the healing sun back into our lives, this seminal book reveals how humanity needs sunlight for health and well-being and for vitality and happiness.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "164411402X"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781644114025"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 224,
+          "printType": "BOOK",
+          "categories": [
+            "Health & Fitness"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=ycNGzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=ycNGzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=ycNGzgEACAAJ&dq=sun&hl=&cd=5&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=ycNGzgEACAAJ&dq=sun&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Healing_Power_of_the_Sun.html?hl=&id=ycNGzgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=ycNGzgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "In this new edition of The Healing Sun, Richard Hobday draws on historical and scientific evidence to explore the many ways that sunlight affects our health and well-being."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "4YwnEAAAQBAJ",
+        "etag": "jZcYor7+ALI",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/4YwnEAAAQBAJ",
+        "volumeInfo": {
+          "title": "Mutiny on the Rising Sun",
+          "subtitle": "A Tragic Tale of Slavery, Smuggling, and Chocolate",
+          "authors": [
+            "Jared Ross Hardesty"
+          ],
+          "publisher": "NYU Press",
+          "publishedDate": "2021-10-19",
+          "description": "A little-known story of mutiny and murder illustrating the centrality of smuggling and slavery in early American society On the night of June 1, 1743, terror struck the schooner Rising Sun. After completing a routine smuggling voyage where the crew sold enslaved Africans in exchange for chocolate, sugar, and coffee in the Dutch colony of Suriname, the ship traveled eastward along the South American coast. Believing there was an opportunity to steal the lucrative cargo and make a new life for themselves, three sailors snuck below deck, murdered four people, and seized control of the vessel. Mutiny on the Rising Sun recounts the origins, events, and eventual fate of the Rising Sun’s final smuggling voyage in vivid detail. Starting from that horrible night in June 1743, it narrates a deeply human history of smuggling, providing an incredible story of those caught in the webs spun by illicit commerce. The case generated a rich documentary record that illuminates an international chocolate smuggling ring, the lives of the crew and mutineers, and the harrowing experience of the enslaved people trafficked by the Rising Sun. Smuggling stood at the center of the lives of everyone involved with the business of the schooner. Larger forces, such as imperial trade restrictions, created the conditions for smuggling, but individual actors, often driven by raw ambition and with little regard for the consequences of their actions, designed, refined, and perpetuated this illicit commerce. At once startling and captivating, Mutiny on the Rising Sun shows how illegal trade created demand for exotic products like chocolate, and how slavery and smuggling were integral to the development of American capitalism.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781479810215"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1479810215"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "printType": "BOOK",
+          "categories": [
+            "History"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.3.3.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=4YwnEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=4YwnEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=4YwnEAAAQBAJ&pg=PP1&dq=sun&hl=&cd=6&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=4YwnEAAAQBAJ&dq=sun&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Mutiny_on_the_Rising_Sun.html?hl=&id=4YwnEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=4YwnEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "_AHVzgEACAAJ",
+        "etag": "Jsy/XRwMXes",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/_AHVzgEACAAJ",
+        "volumeInfo": {
+          "title": "Sun Spots",
+          "subtitle": "A Treasury of Editorial Cartoons - The Vancouver Sun1996-2021",
+          "authors": [
+            "Graham Harrop"
+          ],
+          "publisher": "Createspace Independent Publishing Platform",
+          "publishedDate": "2021-10-02",
+          "description": "Twenty five years' worth of the editorial cartoons of Graham Harrop are collected in this first ever treasury of his work for The Vancouver Sun. From BC Premiers Bill Vander Zalm to Glen Clark (Graham's favourite to draw!) to John Horgan, Prime Ministers from Chretien to Trudeau the 2nd, and from BC Ferries to Vancouver City Hall, Graham has covered the last quarter century with the wit and whimsy for which he has won a BC Newspaper Award and a Reuben Award. Foreword by Trevor Lautens; edited by Cheryl Parker. Part proceeds to The Vancouver Sun's Raise-a-Reader Fund supporting literacy and lifelong learning.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1974262456"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781974262458"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 142,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=_AHVzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=_AHVzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=_AHVzgEACAAJ&dq=sun&hl=&cd=7&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=_AHVzgEACAAJ&dq=sun&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Sun_Spots.html?hl=&id=_AHVzgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=_AHVzgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Twenty five years&#39; worth of the editorial cartoons of Graham Harrop are collected in this first ever treasury of his work for The Vancouver Sun."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "XaovtAEACAAJ",
+        "etag": "d9w71WgIp38",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/XaovtAEACAAJ",
+        "volumeInfo": {
+          "title": "SUN'S DOMAIN",
+          "subtitle": "Book 3 of the Hollow Gods",
+          "authors": [
+            "REBECCA. LEVENE"
+          ],
+          "publishedDate": "2017",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1444753789"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781444753783"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=XaovtAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=XaovtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=XaovtAEACAAJ&dq=sun&hl=&cd=8&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=XaovtAEACAAJ&dq=sun&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/SUN_S_DOMAIN.html?hl=&id=XaovtAEACAAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=XaovtAEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Book 3 of the outstanding The Hollow Gods series In the aftermath of the shattering of Mirror Town, Krish has taken has rightful place as heir to the kingdom of Ashanesland, with his friends and allies ruling by his side."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "20EozgEACAAJ",
+        "etag": "7WY7y/ysU3I",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/20EozgEACAAJ",
+        "volumeInfo": {
+          "title": "Vociferate",
+          "authors": [
+            "Emily Sun"
+          ],
+          "publishedDate": "2021-06",
+          "description": "The poems in Emily Sun's debut poetry collection Vociferate were inspired by diasporic-Asian feminist writers. Like these writers, Emily resists both Eurocentric and patriarchal tropes as she explores the complexities of national and transnational identities, reflects upon the concept of belonging, and questions what it means to be Asian-Australian.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1760990221"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781760990220"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 114,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=20EozgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=20EozgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=20EozgEACAAJ&dq=sun&hl=&cd=9&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=20EozgEACAAJ&dq=sun&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Vociferate.html?hl=&id=20EozgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=20EozgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The poems in Emily Sun&#39;s debut poetry collection Vociferate were inspired by diasporic-Asian feminist writers."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "c3gXEAAAQBAJ",
+        "etag": "Us5pccS4Vs4",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/c3gXEAAAQBAJ",
+        "volumeInfo": {
+          "title": "Vociferate",
+          "authors": [
+            "Emily Sun"
+          ],
+          "publisher": "Fremantle Press",
+          "publishedDate": "2021-06-01",
+          "description": "The poems in Emily Sun's debut poetry collection Vociferate were inspired by diasporic-Asian feminist writers. Like these writers, Emily resists both Eurocentric and patriarchal tropes as she explores the complexities of national and transnational identities, reflects upon the concept of belonging, and questions what it means to be Asian-Australian.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781760990237"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "176099023X"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 114,
+          "printType": "BOOK",
+          "categories": [
+            "Poetry"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.4.4.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=c3gXEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=c3gXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=c3gXEAAAQBAJ&dq=sun&hl=&cd=10&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=c3gXEAAAQBAJ&dq=sun&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Vociferate.html?hl=&id=c3gXEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=c3gXEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The poems in Emily Sun&#39;s debut poetry collection Vociferate were inspired by diasporic-Asian feminist writers."
+        }
+      }
+    ]
+  }
