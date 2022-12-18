@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+
+.App:Link:link { text-decoration: none; }
+
+
+.App:Link:visited { text-decoration: none; }
+
+
+.App:Link:hover { text-decoration: none; }
+
+
+.App:Link:active { text-decoration: none; }
+
+

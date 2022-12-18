@@ -1,0 +1,184 @@
+{
+    "Headline": {
+      "EffectiveDate": "2022-12-13T13:00:00+07:00",
+      "EffectiveEpochDate": 1670911200,
+      "Severity": 5,
+      "Text": "Thunderstorms in the area Tuesday afternoon through Wednesday afternoon",
+      "Category": "thunderstorm",
+      "EndDate": "2022-12-14T19:00:00+07:00",
+      "EndEpochDate": 1671019200,
+      "MobileLink": "http://www.accuweather.com/en/id/telagamurni/3453755/daily-weather-forecast/3453755?unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/id/telagamurni/3453755/daily-weather-forecast/3453755?unit=c&lang=en-us"
+    },
+    "DailyForecasts": [
+      {
+        "Date": "2022-12-12T07:00:00+07:00",
+        "EpochDate": 1670803200,
+        "Temperature": {
+          "Minimum": {
+            "Value": 24,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 33.6,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "Day": {
+          "Icon": 12,
+          "IconPhrase": "Showers",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Heavy"
+        },
+        "Night": {
+          "Icon": 35,
+          "IconPhrase": "Partly cloudy",
+          "HasPrecipitation": false
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/id/telagamurni/3453755/daily-weather-forecast/3453755?day=1&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/id/telagamurni/3453755/daily-weather-forecast/3453755?day=1&unit=c&lang=en-us"
+      },
+      {
+        "Date": "2022-12-13T07:00:00+07:00",
+        "EpochDate": 1670889600,
+        "Temperature": {
+          "Minimum": {
+            "Value": 24,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 33.6,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "Day": {
+          "Icon": 15,
+          "IconPhrase": "Thunderstorms",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Moderate"
+        },
+        "Night": {
+          "Icon": 15,
+          "IconPhrase": "Thunderstorms",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/id/telagamurni/3453755/daily-weather-forecast/3453755?day=2&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/id/telagamurni/3453755/daily-weather-forecast/3453755?day=2&unit=c&lang=en-us"
+      },
+      {
+        "Date": "2022-12-14T07:00:00+07:00",
+        "EpochDate": 1670976000,
+        "Temperature": {
+          "Minimum": {
+            "Value": 23.9,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 31.9,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "Day": {
+          "Icon": 15,
+          "IconPhrase": "Thunderstorms",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Moderate"
+        },
+        "Night": {
+          "Icon": 36,
+          "IconPhrase": "Intermittent clouds",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/id/telagamurni/3453755/daily-weather-forecast/3453755?day=3&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/id/telagamurni/3453755/daily-weather-forecast/3453755?day=3&unit=c&lang=en-us"
+      },
+      {
+        "Date": "2022-12-15T07:00:00+07:00",
+        "EpochDate": 1671062400,
+        "Temperature": {
+          "Minimum": {
+            "Value": 23.8,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 32.9,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "Day": {
+          "Icon": 12,
+          "IconPhrase": "Showers",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Moderate"
+        },
+        "Night": {
+          "Icon": 38,
+          "IconPhrase": "Mostly cloudy",
+          "HasPrecipitation": false
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/id/telagamurni/3453755/daily-weather-forecast/3453755?day=4&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/id/telagamurni/3453755/daily-weather-forecast/3453755?day=4&unit=c&lang=en-us"
+      },
+      {
+        "Date": "2022-12-16T07:00:00+07:00",
+        "EpochDate": 1671148800,
+        "Temperature": {
+          "Minimum": {
+            "Value": 23.9,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 32.6,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "Day": {
+          "Icon": 12,
+          "IconPhrase": "Showers",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Moderate"
+        },
+        "Night": {
+          "Icon": 36,
+          "IconPhrase": "Intermittent clouds",
+          "HasPrecipitation": false
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/id/telagamurni/3453755/daily-weather-forecast/3453755?day=5&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/id/telagamurni/3453755/daily-weather-forecast/3453755?day=5&unit=c&lang=en-us"
+      }
+    ]
+  }

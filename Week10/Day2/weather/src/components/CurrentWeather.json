@@ -1,0 +1,25 @@
+[
+    {
+      "LocalObservationDateTime": "2022-12-12T16:50:00+07:00",
+      "EpochTime": 1670838600,
+      "WeatherText": "Mostly cloudy",
+      "WeatherIcon": 6,
+      "HasPrecipitation": false,
+      "PrecipitationType": null,
+      "IsDayTime": true,
+      "Temperature": {
+        "Metric": {
+          "Value": 29.3,
+          "Unit": "C",
+          "UnitType": 17
+        },
+        "Imperial": {
+          "Value": 85,
+          "Unit": "F",
+          "UnitType": 18
+        }
+      },
+      "MobileLink": "http://www.accuweather.com/en/id/telagamurni/3453755/current-weather/3453755?lang=en-us",
+      "Link": "http://www.accuweather.com/en/id/telagamurni/3453755/current-weather/3453755?lang=en-us"
+    }
+  ]
