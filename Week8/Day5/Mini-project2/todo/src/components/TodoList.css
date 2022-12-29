@@ -1,3 +1,7 @@
+body{
+  background-color: #00e676;
+
+}
 .todoListMain .header input {
     padding: 10px;
     font-size: 16px;
@@ -51,5 +55,5 @@
   }
 
   .todoListMain{
-    margin-left: 6https://github.com/Inessa88/DI_Bootcamp/tree/main/Week8/Day5/Mini-project2/todo0vh;
+    margin-left: 60vh;
   }

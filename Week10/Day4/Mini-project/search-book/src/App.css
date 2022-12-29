@@ -17,13 +17,14 @@
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 1fr;
   grid-gap: 1em;
+  margin-left: 5vw;
 }
 
 
 
 img {
-  width: 200px;
-  height: 240px
+  width: 160px;
+  margin-left: 1vw;
   }
 
 
